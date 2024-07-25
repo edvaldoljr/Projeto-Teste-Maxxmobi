@@ -11,7 +11,7 @@
 	<groupId>br.com.maxxmobi</groupId>
 	<artifactId>teste</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>API REST FULL CANTIDATOS</name>
+	<name>API REST FULL CANDIDATOS</name>
 	<description>Projeto para o teste da Maxxmobi</description>
 	<url/>
 	<licenses>
