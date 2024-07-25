@@ -110,7 +110,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>br.com.maxxmobi.ApiRestFullCantidatosApplication</mainClass>
+					<mainClass>br.com.maxxmobi.teste.ApiRestFullCantidatosApplication</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
