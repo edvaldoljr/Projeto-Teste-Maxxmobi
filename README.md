@@ -924,7 +924,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 
 ## **ACESSE O PDF DA DOCUMENTAÇÃO EM SWAGGER E ENTENDA MELHOR CADA ENDPOINT**:
 
-[https://github.com/edvaldoljr/Projeto-Teste-Maxxmobi/blob/main/Projeto%20Teste%20Maxxmobi.pdf]()
+[https://github.com/edvaldoljr/Projeto-Teste-Maxxmobi/blob/main/Projeto%20Teste%20Maxxmobi.pdf](https://github.com/edvaldoljr/Projeto-Teste-Maxxmobi/blob/main/Projeto%20Teste%20Maxxmobi.pdf)
 
 **Prezado Altamiro Santos**
 
