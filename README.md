@@ -420,16 +420,14 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 
   - **Exemplo de Requisição**:
 
-    ```json
-    http
-    Copiar código
+    ```http
     GET /usuarios/1
     ```
 
   - **Exemplo de Resposta (Sucesso)**:
 
     ```json
-    jsonCopiar código{
+    {
         "id": 1,
         "nome": "João da Silva",
         "email": "joao@email.com"
@@ -440,7 +438,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Resposta (Erro)**:
 
     ```json
-    jsonCopiar código{
+    {
         "mensagem": "Usuário não encontrado"
     }
     ```
@@ -458,7 +456,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Resposta (Sucesso)**:
 
     ```json
-    jsonCopiar código[
+    [
         {
             "id": 1,
             "nome": "João da Silva",
@@ -480,7 +478,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Requisição**:
 
     ```json
-    jsonCopiar código{
+    {
         "email": "joao@email.com",
         "senha": "minhaSenha123"
     }
@@ -489,7 +487,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Resposta (Sucesso)**:
 
     ```json
-    jsonCopiar código{
+    {
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2FvQGVtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYxNTE2NTEyLCJleHAiOjE2NjE1MjAzMTJ9.yJmM1O854aGzvZ3X-ywOo97b0nmTvjNuuo6qwU7AiM"
     }
     ```
@@ -497,7 +495,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Resposta (Erro)**:
 
     ```json
-    jsonCopiar código{
+    {
         "mensagem": "Credenciais inválidas"
     }
     ```
@@ -509,7 +507,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Requisição**:
 
     ```json
-    jsonCopiar código{
+    {
         "nome": "Novo Usuário",
         "email": "novousuario@email.com",
         "senha": "minhaNovaSenha"
@@ -519,7 +517,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Resposta (Sucesso)**:
 
     ```json
-    jsonCopiar código{
+    {
         "mensagem": "Usuário cadastrado com sucesso"
     }
     ```
@@ -527,7 +525,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Resposta (Erro)**:
 
     ```json
-    jsonCopiar código{
+    {
         "mensagem": "Email já cadastrado"
     }
     ```
@@ -539,7 +537,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Requisição**:
 
     ```json
-    jsonCopiar código{
+    {
         "id": 1,
         "nome": "João da Silva Atualizado",
         "email": "joao.atualizado@email.com"
@@ -549,7 +547,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Resposta (Sucesso)**:
 
     ```json
-    jsonCopiar código{
+    {
         "mensagem": "Usuário atualizado com sucesso"
     }
     ```
@@ -557,7 +555,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   - **Exemplo de Resposta (Erro)**:
 
     ```json
-    jsonCopiar código{
+    {
         "mensagem": "Usuário não encontrado"
     }
     ```
@@ -581,7 +579,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Sucesso):
 
   ```json
-  jsonCopiar código{
+  {
     "message": "Candidato excluído com sucesso."
   }
   ```
@@ -589,7 +587,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Erro, por exemplo, candidato não encontrado):
 
   ```json
-  jsonCopiar código{
+  {
     "error": "Candidato não encontrado."
   }
   ```
@@ -607,7 +605,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Sucesso):
 
   ```json
-  jsonCopiar código{
+  {
     "id": 1,
     "nome": "Marina Barros",
     "nascimento": "2003-10-10",
@@ -624,7 +622,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Erro, por exemplo, candidato não encontrado):
 
   ```json
-  jsonCopiar código{
+  {
     "error": "Candidato não encontrado."
   }
   ```
@@ -642,7 +640,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Sucesso):
 
   ```json
-  jsonCopiar código[
+  [
     {
       "id": 1,
       "nome": "Marina Barros",
@@ -673,7 +671,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Erro, por exemplo, parâmetro inválido):
 
   ```json
-  jsonCopiar código{
+  {
     "error": "Sexo inválido. Use 'M' para masculino ou 'F' para feminino."
   }
   ```
@@ -691,7 +689,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Sucesso):
 
   ```json
-  jsonCopiar código[
+  [
     {
       "id": 1,
       "nome": "Marina Barros",
@@ -710,7 +708,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Erro, por exemplo, parâmetro inválido):
 
   ```json
-  jsonCopiar código{
+  {
     "error": "Nota inválida. Deve ser um número inteiro."
   }
   ```
@@ -728,7 +726,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Sucesso):
 
   ```json
-  jsonCopiar código[
+  [
     {
       "id": 1,
       "nome": "Marina Barros",
@@ -747,7 +745,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Erro, por exemplo, nome não encontrado):
 
   ```json
-  jsonCopiar código{
+  {
     "error": "Nenhum candidato encontrado com o nome fornecido."
   }
   ```
@@ -765,7 +763,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Sucesso):
 
   ```json
-  jsonCopiar código[
+  [
     {
       "id": 1,
       "nome": "Marina Barros",
@@ -784,7 +782,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Erro, por exemplo, data inválida):
 
   ```json
-  jsonCopiar código{
+  {
     "error": "Data de nascimento inválida. Use o formato YYYY-MM-DD."
   }
   ```
@@ -802,7 +800,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Sucesso):
 
   ```json
-  jsonCopiar código[
+  [
     {
       "id": 2,
       "nome": "Ana Souza",
@@ -833,7 +831,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Erro, por exemplo, critério de ordenação inválido):
 
   ```json
-  jsonCopiar código{
+  {
     "error": "Critério de ordenação inválido. Use 'nome', 'nota', etc."
   }
   ```
@@ -851,7 +849,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   **Corpo da Requisição**:
 
   ```json
-  jsonCopiar código{
+  {
     "nome": "Marina Barros",
     "nascimento": "2003-10-10",
     "dataCriacao": "2024-07-25",
@@ -867,7 +865,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Sucesso):
 
   ```json
-  jsonCopiar código{
+  {
     "message": "Candidato criado com sucesso.",
     "id": 3
   }
@@ -894,7 +892,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
   **Corpo da Requisição**:
 
   ```json
-  jsonCopiar código{
+  {
     "id": 1,
     "nome": "Marina Barros",
     "nascimento": "2003-10-10",
@@ -911,7 +909,7 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Sucesso):
 
   ```json
-  jsonCopiar código{
+  {
     "message": "Candidato atualizado com sucesso."
   }
   ```
@@ -919,10 +917,14 @@ A estrutura de pastas apresenta uma organização comum em projetos Spring Boot,
 - **Resposta** (Erro, por exemplo, candidato não encontrado):
 
   ```json
-  jsonCopiar código{
+  {
     "error": "Candidato não encontrado. Verifique o ID e tente novamente."
   }
   ```
+
+## **ACESSE O PDF DA DOCUMENTAÇÃO EM SWAGGER E ENTENDA MELHOR CADA ENDPOINT**:
+
+[]()
 
 **Prezado Altamiro Santos**
 
